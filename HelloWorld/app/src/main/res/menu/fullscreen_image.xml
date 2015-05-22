@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jesper.WallCycle.fullscreenImage" >
+    <item android:id="@+id/action_setWallpaper"
+        android:title="Use as wallpaper"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_Remove"
+        android:title="Remove"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

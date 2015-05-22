@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jesper.WallCycle" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="com.example.jesper.WallCycle.background"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.example.jesper.WallCycle.MyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.jesper.WallCycle.Options"
+            android:label="@string/title_activity_options"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.jesper.WallCycle.fullscreenImage"
+            android:label="@string/title_activity_fullscreen_image" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>
